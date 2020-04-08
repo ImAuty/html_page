@@ -14,11 +14,26 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-light bg-warning mb-2">
-                <a class="navbar-brand" href="./index.html">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand text-dark" href="./index.html">
                     <img src="./img/top.png" width="40" height="40" alt="top_logo">
                     <span class="h2 align-middle">株式会社Tグレース</span>
                 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <div class="m-3">
+                            <span class="h3">MENU</span>
+                        </div>
+                        <a class="nav-item nav-link h4 active" href="./index.html">TOP<span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link h4" href="./care.html">訪問介護について</a>
+                        <a class="nav-item nav-link h4" href="./service.html">自費サービスについて</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -178,21 +193,24 @@
         </div>
     </main>
     <footer>
-        <div class="container">
-            <hr>
-            <div class="text-center mb-2">
-                <span class="h5">グレースヘルパーステーション</span>
-                <br>
-                ＴＥＬ：０９３－９８１－０１５５
-                <br>
-                ＦＡＸ：０９３－９６１－３３５７
-            </div>
-            <div class="d-flex justify-content-center mb-2">
-                〒８０２－０９７１<br>
-                北九州市小倉南区守恒本町１丁目５番２２号<br>
+        <div class="container-fluid">
+            <div class="bg-light p-3">
+                <div class="row">
+                    <div class="col-md text-center text-md-right">
+                        <div class="p-1">
+                            <span class="h3">お気軽にご相談ください♪</span>
+                        </div>
+                    </div>
+                    <div class="col-md text-center text-md-left">
+                        <span>ＴＥＬ：０９３－９８１－０１５５</span>
+                        <br>
+                        <span>ＦＡＸ：０９３－９６１－３３５７</span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.4.1.slim.min.js"></script>
