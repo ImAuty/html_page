@@ -13,6 +13,23 @@
         .top_content {
             height: 500px;
         }
+
+        #content1 {
+            color: white;
+            background-image: url('./img/kaigo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+        }
+
+        #header_menu {
+            position: fixed;
+            top: 0px;
+        }
+        #footer_menu {
+            position: fixed;
+            bottom: 0px;
+        }
     </style>
 
     <title>TOP-株式会社Tグレース</title>
@@ -20,8 +37,8 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-light">
+        <div class="container-fluid" id="header_menu">
+            <nav class="navbar navbar-light bg-white">
                 <a class="navbar-brand text-dark" href="./index.html">
                     <img src="./img/top.png" width="40" height="40" alt="top_logo">
                     <span class="h2 align-middle">株式会社Tグレース</span>
@@ -45,8 +62,8 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="m-3 top_content" id="content1">
+        <div class="container pt-5" id="main_content">
+            <div class="m-3 pt-5 top_content" id="content1">
                 <div class="text-center">
                     <p class="h2">
                         グレースヘルパーステーションは、訪問介護を軸に、
@@ -58,54 +75,14 @@
                 <a href="#content2" class="btn btn-light btn-lg">↓</a>
             </div>
             <div class="m-3 top_content" id="content2">
-                <div class="text-center h2">
-                    <div class="row border rounded-circle">
-                        <div class="col-4 border rounded-circle">
-                            <br>
-                            日常生活の
-                            <br>
-                            介助
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-4"></div>
-                        <div class="col-4 border rounded-circle">
-                            <br>
-                            家事全般の
-                            <br>
-                            お手伝い
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-12">
-                            自立のための
-                            <br>
-                            支援
-                        </div>
-                        <div class="col-4 border rounded-circle">
-                            <br>
-                            健康状態の
-                            <br>
-                            観察
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-4"></div>
-                        <div class="col-4 border rounded-circle">
-                            <br>
-                            その他
-                            <br>
-                            ご相談
-                            <br>
-                            <br>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <img src="./img/jiritsu.png" class="img-fluid">
                 </div>
             </div>
             <div class="text-center">
                 <a href="#content3" class="btn btn-light btn-lg">↓</a>
             </div>
-            <div class="m-3 top_content" id="content3">
+            <div class="m-3 pt-5 top_content" id="content3">
                 <h1>訪問介護</h1>
                 <div class="row">
                     <div class="col-4">
@@ -130,7 +107,7 @@
             <div class="text-center">
                 <a href="#content4" class="btn btn-light btn-lg">↓</a>
             </div>
-            <div class="m-3 top_content" id="content4">
+            <div class="m-3 pt-5 top_content" id="content4">
                 <h1>自費サービス(介護保険外サービス)</h1>
                 <div class="row">
                     <div class="col-4">
@@ -151,13 +128,13 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="#content1" class="btn btn-light btn-lg">↑</a>
+            <div class="text-center pb-5">
+                <a href="#main_content" class="btn btn-light btn-lg">↑</a>
             </div>
         </div>
     </main>
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid" id="footer_menu">
             <div class="bg-light p-3">
                 <div class="row">
                     <div class="col-md text-center text-md-right">
